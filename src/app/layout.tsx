@@ -1,4 +1,4 @@
-import { geistMono, geistSans } from "@/ui";
+import { geistMono, geistSans, TopMenu } from "@/ui";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -13,11 +13,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen bg-[#1f1f47]`}
       >
-        {children}
+        <TopMenu />
+        <main >
+          {children}
+        </main>
       </body>
     </html>
   );
