@@ -24,7 +24,7 @@ export function ToggleMenu() {
         <div
             onClick={toggleDarkMode}
             className="flex justify-center items-center size-[44px] bg-[#0f0e474d] rounded-full ml-auto border border-gray-50/20 mb-4 backdrop-blur-2xl md:hidden">
-            <Image src={"/svg/hamburger-menu.svg"} alt="menu" width={24} height={24} />
+            <Image src={"/svg/top-menu/hamburger-menu.svg"} alt="menu" width={24} height={24} />
         </div>
     )
 }

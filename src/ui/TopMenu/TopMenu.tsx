@@ -11,7 +11,7 @@ export function TopMenu() {
     ))
 
     return (
-        <header className="max-w-[1600px] mx-auto flex justify-between mt-8 px-8 text-white md:items-center">
+        <div className="fixed top-0 left-0 right-0 max-w-[1600px] mx-auto flex justify-between mt-8 px-8 text-white md:items-center z-[100]">
             <div>
                 Logo
             </div>
@@ -26,6 +26,6 @@ export function TopMenu() {
                     </ul>
                 </nav>
             </div>
-        </header>
+        </div>
     )
 }

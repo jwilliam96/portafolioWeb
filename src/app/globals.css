@@ -1,5 +1,18 @@
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  .clip-url-olaMorada {
+    clip-path: url(#clip);
+  }
+}
+
+@theme {
+  --breakpoint-xs: 425px;
+  --breakpoint-xl: 500px;
+  --breakpoint-xx: 1440px;
+}
 
 .backdrop-filter {
   backdrop-filter: blur(40px) brightness(80%) saturate(150%);
