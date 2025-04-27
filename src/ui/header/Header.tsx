@@ -1,4 +1,5 @@
-import { SvgOlaMorada } from "./svg/svgs";
+import { HeaderIllustration } from "./header-illustration";
+import { SvgOlaMorada } from "@/components";
 
 export function Header() {
     return (
@@ -22,15 +23,21 @@ export function Header() {
                 <div className="absolute z-50 w-full bg-[center_top] bg-repeat h-[224px] bg-[url(/svg/header/stars.svg)]" />
             </div>
 
-            <div className="relative px-5 grid max-w-[1234px] mx-auto z-[60]">
-                <div className="relative top-[148px] grid gap-[30px] xs:gap-12 xs:top-[250px]">
-                    <h1 className="grid text-4xl font-bold bg-linear-[#730040_0%,#301cbe_100%] bg-clip-text text-transparent xs:text-5xl">
+            {/* HEADER  */}
+            <div className="relative px-5 grid max-w-[1234px] mx-auto z-[60] xs:grid-cols-[360px_auto]">
+                {/* TEXTO  */}
+                <div className="relative top-[148px] grid gap-[30px] xs:gap-12 xs:top-[250px] md:top-[200px]">
+                    <h1 className="grid text-4xl font-bold bg-linear-[#730040_0%,#301cbe_100%] bg-clip-text text-transparent xs:text-5xl md:text-6xl">
                         Desarrollador
                         <span>Web </span>
                         <span> Front end</span>
                     </h1>
-                    <p>Don’t skip design. Learn design and code, by building real apps with React and Swift. Complete courses about the best tools.</p>
+                    <p className="leading-[130%] max-w-[300px] text-[17px]">Don’t skip design. Learn design and code, by building real apps with React and Swift. Complete courses about the best tools.</p>
                 </div>
+
+                {/* ILUSTRACIÓN  */}
+                <HeaderIllustration />
+
             </div>
         </header >
     )

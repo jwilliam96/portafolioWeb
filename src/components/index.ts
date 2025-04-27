@@ -1,0 +1,1 @@
+export { SvgOlaMorada } from "./svg/svgs"
