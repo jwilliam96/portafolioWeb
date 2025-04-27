@@ -1,5 +1,5 @@
 import { HeaderIllustration } from "./header-illustration";
-import { SvgOlaMorada } from "@/components";
+import { IconDownload, SvgOlaMorada } from "@/components";
 
 export function Header() {
     return (
@@ -25,14 +25,25 @@ export function Header() {
 
             {/* HEADER  */}
             <div className="relative px-5 grid max-w-[1234px] mx-auto z-[60] xs:grid-cols-[360px_auto]">
-                {/* TEXTO  */}
-                <div className="relative top-[148px] grid gap-[30px] xs:gap-12 xs:top-[250px] md:top-[200px]">
-                    <h1 className="grid text-4xl font-bold bg-linear-[#730040_0%,#301cbe_100%] bg-clip-text text-transparent xs:text-5xl md:text-6xl">
+                {/* TEXTO FRONT */}
+                <div className="relative top-[128px] grid gap-[30px] xs:gap-12 xs:top-[250px] md:top-[200px]">
+                    <h1 className="grid mb-8 text-4xl font-bold bg-linear-[#730040_0%,#301cbe_100%] bg-clip-text text-transparent xs:text-5xl xs:mb-0 md:text-6xl lg:mb-4">
                         Desarrollador
                         <span>Web </span>
                         <span> Front end</span>
                     </h1>
-                    <p className="leading-[130%] max-w-[300px] text-[17px]">Don’t skip design. Learn design and code, by building real apps with React and Swift. Complete courses about the best tools.</p>
+
+                    {/* SOBRE MI  */}
+                    <p className="leading-[130%] max-w-[300px] text-[17px] lg:text-[18px]">Don’t skip design. Learn design and code, by building real apps with React and Swift. Complete courses about the best tools.</p>
+
+                    {/* DESCARGA CV  */}
+                    <div className="flex items-center gap-4 px-6 w-[280px] h-[67px] rounded-[20px] bg-linear-[#fff_0%,#d9dfff_100%] cursor-pointer ">
+                        <IconDownload size={40} className="hover:animate-bounce text-[#5638b6]" />
+                        <div>
+                            <p className="leading-none font-semibold text-[17px]">CV-John-William</p>
+                            <span className="text-[#595c7b] font-semibold">Descargar</span>
+                        </div>
+                    </div>
                 </div>
 
                 {/* ILUSTRACIÓN  */}

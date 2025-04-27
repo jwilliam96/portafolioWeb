@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 export function ToggleMenu() {
 
-    const [darkMode, setDarkMode] = useState(true)
+    const [darkMode, setDarkMode] = useState(false)
 
     useEffect(() => {
         const html = document.documentElement;
