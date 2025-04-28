@@ -1,4 +1,4 @@
-import { geistMono, geistSans, TopMenu } from "@/ui";
+import { geistMono, geistSans, Header, TopMenu } from "@/ui";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -18,9 +18,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen bg-[#1f1f47]`}
       >
         <TopMenu />
-        <main >
-          {children}
-        </main>
+        <Header />
+
+        {children}
+
       </body>
     </html>
   );

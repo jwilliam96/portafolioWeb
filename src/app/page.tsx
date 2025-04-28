@@ -1,10 +1,9 @@
-import { Header } from "@/ui";
+import { Projects } from "@/ui";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-
-    </>
+    <main>
+      <Projects />
+    </main>
   );
 }

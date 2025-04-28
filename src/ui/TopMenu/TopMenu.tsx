@@ -19,7 +19,7 @@ export function TopMenu() {
             <div>
                 <ToggleMenu />
 
-                <nav className="text-[#ffffffb3] bg-[#0f0e474d] backdrop-blur-2xl backdrop-brightness-[80%] backdrop-saturate-150 rounded-[20px] md:bg-transparent md:backdrop-blur-none md:backdrop-brightness-100 md:backdrop-saturate-100">
+                <nav className="text-[#ffffffb3] bg-[#0f0e474d] backdrop-blur-2xl backdrop-brightness-[80%] backdrop-saturate-150 rounded-[20px] md:bg-transparent md:backdrop-blur-none md:backdrop-brightness-100 md:backdrop-saturate-100 md:text-white">
 
                     <ul className="hidden dark:block p-5 min-w-[230px] divide-y-1 md:divide-y-0 md:text-xl md:flex md:gap-10 md:dark:flex">
                         {linkNav}
