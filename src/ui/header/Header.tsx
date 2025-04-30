@@ -37,8 +37,8 @@ export function Header() {
                     <p className="leading-[130%] max-w-[300px] text-[17px] lg:text-[18px] mb-4">Transformo ideas en aplicaciones web sólidas, escalables y orientadas al usuario, aportando compromiso, innovación y resultados reales.</p>
 
                     {/* DESCARGA CV  */}
-                    <div className="flex items-center gap-4 px-6 w-[280px] h-[67px] rounded-[20px] bg-linear-[#fff_0%,#d9dfff_100%] cursor-pointer ">
-                        <IconDownload size={40} className="hover:animate-bounce text-[#5638b6]" />
+                    <div className="group flex items-center gap-4 px-6 w-[280px] h-[67px] rounded-[20px] bg-linear-[#fff_0%,#d9dfff_100%] cursor-pointer ">
+                        <IconDownload size={40} className="group-hover:animate-bounce text-[#5638b6]" />
                         <div>
                             <p className="leading-none font-semibold text-[17px]">CV-John-William</p>
                             <span className="text-[#595c7b] font-semibold">Descargar</span>
