@@ -1,6 +1,6 @@
 
 
-import { IconGitHub, IconGlobe } from "@/components";
+import { ButtonGitDemo } from "./button-gitDemo";
 import Image from "next/image";
 
 interface Props {
@@ -8,45 +8,40 @@ interface Props {
     url: string
     title: string
     // description?: string
+    reverse?: boolean
 }
 
-export function CardProject({ className, title, url }: Props) {
+export function CardProject({ className, title, url, reverse }: Props) {
 
 
     return (
-        <div className="md:flex md:justify-between">
+        <div className="md:grid md:grid-cols-2">
 
             {/* CARD  */}
-            <div className="relative">
+            <div className={`relative px-4 ${reverse && "order-1"} mx-auto`}>
                 {/* FONDO  */}
-                <div className={`absolute top-5 w-[250px] h-[280px] rounded-[0_40px_40px] skew-y-[8deg] ${className} md:w-[42%] md:h-[340px] md:top-9`} />
+                <div className={`absolute top-5 w-[250px] h-[280px] rounded-[0_40px_40px] skew-y-[8deg] ${className} md:w-full md:max-w-[350px] md:h-[310px] md:top-9`} />
 
-                <div className={`relative z-10 px-3 py-4 bg-[#1f1f4799] w-[270px] h-[280px] backdrop-blur-2xl rounded-[0_30px_40px_40px] md:w-[45%] md:h-[350px]`}>
+                <div className={`relative z-10 px-3 py-4 bg-[#1f1f4799] w-[270px] h-[280px] backdrop-blur-2xl rounded-[0_30px_40px_40px] md:w-full md:max-w-[390px] md:h-[320px]`}>
 
                     <Image className="mx-auto rounded-[0_25px_25px] h-[150px] object-cover md:h-[220px]" src={url} alt="imagen teslo-shop" width={1665} height={930} />
 
-                    <h3 className="text-xl font-semibold text-center mt-2 text-[#ffffffb3]">{title}</h3>
+                    {/* TITLE  */}
+                    <h3 className="text-xl font-semibold text-center mt-2 text-[#ffffffb3] md:hidden">{title}</h3>
 
                     {/* BOTONES / GITHUB - DEMO */}
-                    <div className="flex justify-between px-2">
-                        {/* GITHUB  */}
-                        <div className="rounded-[30px] w-[100px] bg-linear-[#18204f66_0%,#18204f40_100%] px-2 py-1 flex gap-2 items-center mt-5 text-[#ffffffb3]  border border-[#ffffff7a]">
-                            <IconGitHub size={22} />
-                            <p>GitHub</p>
-                        </div>
+                    <ButtonGitDemo />
 
-                        {/* DEMO  */}
-                        <div className="rounded-[30px] w-[100px] bg-linear-[#18204f66_0%,#18204f40_100%] px-2 py-1 flex gap-2 items-center mt-5 text-[#ffffffb3]  border border-[#ffffff7a]">
-                            <IconGlobe size={22} />
-                            <p>Demo</p>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             {/* DESCRIPTION  */}
-            <div className="hidden md:block">
-                otro
+            <div className="hidden md:block max-w-[400px] mx-auto px-4">
+                <p className="text-[#ffffffb3] mb-4">PROYECTO 1</p>
+                <h3 className=" text-3xl mb-4 font-bold text-white lg:text-4xl">{title}</h3>
+                <p className="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo impedit quod excepturi itaque enim non adipisci unde natus molestias sapiente, consequuntur pariatur, quia, praesentium voluptas veniam reiciendis fugiat dolore necessitatibus.</p>
+
+                <ButtonGitDemo className="mt-14 *:rounded-[10px] gap-10" />
             </div>
         </div>
     )

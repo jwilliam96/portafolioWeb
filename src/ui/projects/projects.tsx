@@ -18,10 +18,10 @@ export function Projects() {
                 <IconNode className="text-[#339933]" />
             </div>
 
-            <div className="grid gap-20 justify-center mt-16 md:justify-normal">
+            <div className="grid gap-20 justify-center mt-16 md:justify-normal md:gap-32 md:mt-24">
                 {
                     listProject.map((item, index) => (
-                        <CardProject key={item.title} url={item.url} title={item.title} className={`${index % 2 === 0 ? "bg-linear-[#630b8c_0%,#408dd5_100%]" : "bg-linear-[#408dd5_0%,#630b8c_100%]"}`} />
+                        <CardProject key={item.title} url={item.url} title={item.title} className={`${index % 2 === 0 ? "bg-linear-[#630b8c_0%,#408dd5_100%]" : "bg-linear-[#408dd5_0%,#630b8c_100%]"}`} reverse={index % 2 === 1 && true} />
                     ))
                 }
             </div>
