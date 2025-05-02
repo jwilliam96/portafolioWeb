@@ -9,16 +9,18 @@ interface Props {
     title: string
     // description?: string
     reverse?: boolean
+    urlDesktop?: string
+    urlMobile?: string
 }
 
-export function CardProject({ className, title, url, reverse }: Props) {
+export function CardProject({ className, title, url, reverse, urlDesktop, urlMobile }: Props) {
 
 
     return (
-        <div className="md:grid md:grid-cols-2">
+        <div className="md:grid md:grid-cols-2 gap-6">
 
-            {/* CARD  */}
-            <div className={`relative px-4 ${reverse && "order-1"} mx-auto`}>
+            {/* CARD MOBILE*/}
+            <div className={`relative px-4 ${reverse && "order-1"} mx-auto md:hidden`}>
                 {/* FONDO  */}
                 <div className={`absolute top-5 w-[250px] h-[280px] rounded-[0_40px_40px] skew-y-[8deg] ${className} md:w-full md:max-w-[350px] md:h-[310px] md:top-9`} />
 
@@ -35,8 +37,20 @@ export function CardProject({ className, title, url, reverse }: Props) {
                 </div>
             </div>
 
+            {/* DESKTOP CARD  */}
+            <div className={`gap-4 ${reverse && "order-1"} hidden md:flex`}>
+                <figure className="flex items-center">
+                    <Image priority className="w-[360px] h-auto fill-white drop-shadow-2xl drop-shadow-white/50" src={urlDesktop ?? ""} alt="img" width={1280} height={719} />
+                </figure>
+                <figure className="flex items-center">
+                    <Image className="w-[160px] h-auto fill-white drop-shadow-2xl drop-shadow-white/40" src={urlMobile ?? ""} alt="img}" width={504} height={917} />
+                </figure>
+
+            </div>
+
+
             {/* DESCRIPTION  */}
-            <div className="hidden md:block max-w-[400px] mx-auto px-4">
+            <div className="hidden md:block max-w-[470px] mx-auto px-10 py-6 rounded-3xl border border-gray-600 bg-[#0f0e474d]">
                 <p className="text-[#ffffffb3] mb-4">PROYECTO 1</p>
                 <h3 className=" text-3xl mb-4 font-bold text-white lg:text-4xl">{title}</h3>
                 <p className="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo impedit quod excepturi itaque enim non adipisci unde natus molestias sapiente, consequuntur pariatur, quia, praesentium voluptas veniam reiciendis fugiat dolore necessitatibus.</p>

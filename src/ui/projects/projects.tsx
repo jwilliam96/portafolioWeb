@@ -4,7 +4,12 @@ import { listProject } from "./utils/helps";
 
 export function Projects() {
     return (
-        <article className="min-h-screen mt-32 max-w-[1225px] mx-auto px-4">
+        <article className="relative min-h-screen mt-32 max-w-[1225px] mx-auto px-4">
+            <div className="absolute w-full overflow-hidden" />
+            <div />
+            <div />
+            <div />
+
             <Title />
             <p className="text-center text-white max-w-[500px] mx-auto md:text-xl">Estos proyectos son 100% responsive, y se ha manejado tanto el lado del Front como el del Back-end</p>
 
@@ -18,10 +23,10 @@ export function Projects() {
                 <IconNode className="text-[#339933]" />
             </div>
 
-            <div className="grid gap-20 justify-center mt-16 md:justify-normal md:gap-32 md:mt-24">
+            <div className="grid gap-20 justify-center mt-16 md:justify-normal md:gap-20 md:mt-24">
                 {
                     listProject.map((item, index) => (
-                        <CardProject key={item.title} url={item.url} title={item.title} className={`${index % 2 === 0 ? "bg-linear-[#630b8c_0%,#408dd5_100%]" : "bg-linear-[#408dd5_0%,#630b8c_100%]"}`} reverse={index % 2 === 1 && true} />
+                        <CardProject key={item.title} url={item.url} title={item.title} className={`${index % 2 === 0 ? "bg-linear-[#630b8c_0%,#408dd5_100%]" : "bg-linear-[#408dd5_0%,#630b8c_100%]"}`} reverse={index % 2 === 1 && true} urlDesktop={item.urlDesktop} urlMobile={item.urlMobile} />
                     ))
                 }
             </div>
