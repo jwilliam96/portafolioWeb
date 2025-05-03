@@ -6,6 +6,7 @@ export { TopMenu } from "./TopMenu/TopMenu"
 export { HeaderIllustration } from "./header/header-illustration"
 export { Header } from "./header/Header"
 
+export { SvgOlaMoradaProject, SvgOlaMoradaTwoProject, SvgOlaRojaProject, SvgLineasProject } from "./projects/svg/ilustraciones-olas"
 export { ButtonGitDemo } from "./projects/button-gitDemo"
 export { CardProject } from "./projects/card-project"
 export { listProject } from "./projects/utils/helps"

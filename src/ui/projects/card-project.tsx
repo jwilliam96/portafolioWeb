@@ -50,7 +50,7 @@ export function CardProject({ className, title, url, reverse, urlDesktop, urlMob
 
 
             {/* DESCRIPTION  */}
-            <div className="hidden md:block max-w-[470px] mx-auto px-10 py-6 rounded-3xl border border-gray-600 bg-[#0f0e474d]">
+            <div className="hidden md:block max-w-[470px] mx-auto px-10 py-6 rounded-3xl border border-gray-600 bg-[#19184d]">
                 <p className="text-[#ffffffb3] mb-4">PROYECTO 1</p>
                 <h3 className=" text-3xl mb-4 font-bold text-white lg:text-4xl">{title}</h3>
                 <p className="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo impedit quod excepturi itaque enim non adipisci unde natus molestias sapiente, consequuntur pariatur, quia, praesentium voluptas veniam reiciendis fugiat dolore necessitatibus.</p>

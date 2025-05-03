@@ -6,6 +6,15 @@
   .clip-url-olaMorada {
     clip-path: url(#clip);
   }
+  .clip-project-ola-morada {
+    clip-path: url(#wave1);
+  }
+  .clip-project-ola-roja {
+    clip-path: url(#wave2);
+  }
+  .clip-project-ola-moradaTwo {
+    clip-path: url(#wave3);
+  }
 }
 
 @theme {
