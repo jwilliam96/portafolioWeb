@@ -8,7 +8,7 @@ export function Projects() {
     return (
         <article className="relative min-h-screen  ">
             {/* OLA MORADA  */}
-            <div className="relative -top-72">
+            <div className="relative -top-40 lg:-top-72">
                 <div className="absolute lg:scale-150 left-[-1px] w-full -z-10 overflow-hidden top-0 h-[250px] origin-top-left bg-linear-[200.44deg,#4316db_13.57%,#9076e7_58.38%] clip-project-ola-morada opacity-20" >
                     <SvgOlaMoradaProject />
                 </div>
@@ -25,7 +25,7 @@ export function Projects() {
             <Image className="absolute top-[380px] bg-size-[1440px] h-[600px] w-full -z-10" src={"/img/project/lineas.svg"} alt="lineas" width={1440} height={431} />
             <Image className="absolute top-[1280px] bg-size-[1440px] h-[600px] w-full -z-10" src={"/img/project/lineas.svg"} alt="lineas" width={1440} height={431} />
 
-            <div className="max-w-[1225px] mx-auto px-4 relative mt-96">
+            <div className="max-w-[1225px] mx-auto px-4 relative mt-64 lg:mt-96">
                 <Title />
                 <p className="text-center text-white max-w-[500px] mx-auto md:text-xl">Estos proyectos son 100% responsive, y se ha manejado tanto el lado del Front como el del Back-end</p>
 
@@ -42,7 +42,7 @@ export function Projects() {
                 <div className="grid gap-20 justify-center mt-16 md:justify-normal md:gap-20 md:mt-24">
                     {
                         listProject.map((item, index) => (
-                            <CardProject key={item.title} url={item.url} title={item.title} className={`${index % 2 === 0 ? "bg-linear-[#630b8c_0%,#408dd5_100%]" : "bg-linear-[#408dd5_0%,#630b8c_100%]"}`} reverse={index % 2 === 1 && true} urlDesktop={item.urlDesktop} urlMobile={item.urlMobile} />
+                            <CardProject key={item.title} url={item.url} title={item.title} className={`${index % 2 === 0 ? "bg-linear-[#630b8c_0%,#408dd5_100%]" : "bg-linear-[#408dd5_0%,#630b8c_100%]"}`} reverse={index % 2 === 1 && true} urlDesktop={item.urlDesktop} urlMobile={item.urlMobile} rol={item.rol} />
                         ))
                     }
                 </div>

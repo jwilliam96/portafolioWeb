@@ -11,3 +11,5 @@ export { ButtonGitDemo } from "./projects/button-gitDemo"
 export { CardProject } from "./projects/card-project"
 export { listProject } from "./projects/utils/helps"
 export { Projects } from "./projects/projects"
+
+export { Responsive } from "./responsive/responsive"
