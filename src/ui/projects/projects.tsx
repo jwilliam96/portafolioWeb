@@ -26,7 +26,7 @@ export function Projects() {
             <Image className="absolute top-[1280px] bg-size-[1440px] h-[600px] w-full -z-10" src={"/img/project/lineas.svg"} alt="lineas" width={1440} height={431} />
 
             <div className="max-w-[1225px] mx-auto px-4 relative mt-64 lg:mt-96">
-                <Title />
+                <Title title="proyecto" />
                 <p className="text-center text-white max-w-[500px] mx-auto md:text-xl">Estos proyectos son 100% responsive, y se ha manejado tanto el lado del Front como el del Back-end</p>
 
                 <div className="flex gap-4 mt-6 justify-center md:*:size-14 md:gap-12">
