@@ -30,13 +30,13 @@ export function Projects() {
                 <p className="text-center text-white max-w-[500px] mx-auto md:text-xl">Estos proyectos son 100% responsive, y se ha manejado tanto el lado del Front como el del Back-end</p>
 
                 <div className="flex gap-4 mt-6 justify-center md:*:size-14 md:gap-12">
-                    <IconReact className="text-[#58c4dc]" />
-                    <IconJavaScript className="text-[#f7df1e]" />
+                    <IconReact />
+                    <IconJavaScript />
                     <IconNext className="text-black " />
-                    <IconTailwind className="text-[#00bcff]" />
-                    <IconTypeScript className="text-[#36c]" />
-                    <IconZod className="text-[#3399ff]" />
-                    <IconNode className="text-[#339933]" />
+                    <IconTailwind />
+                    <IconTypeScript />
+                    <IconZod />
+                    <IconNode />
                 </div>
 
                 <div className="grid gap-20 justify-center mt-16 md:justify-normal md:gap-20 md:mt-24">

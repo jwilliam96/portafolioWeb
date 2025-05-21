@@ -16,7 +16,7 @@ export function IconDownload({ className, size = 30 }: Props) {
 }
 export function IconReact({ className, size = 30 }: Props) {
     return (
-        <FaReact className={`${className}`} size={size} />
+        <FaReact className={`${className} text-[#58c4dc]`} size={size} />
     )
 }
 export function IconNext({ className, size = 30 }: Props) {
@@ -26,27 +26,27 @@ export function IconNext({ className, size = 30 }: Props) {
 }
 export function IconTailwind({ className, size = 30 }: Props) {
     return (
-        <RiTailwindCssFill className={`${className}`} size={size} />
+        <RiTailwindCssFill className={`${className} text-[#00bcff]`} size={size} />
     )
 }
 export function IconTypeScript({ className, size = 30 }: Props) {
     return (
-        <SiTypescript className={`${className}`} size={size} />
+        <SiTypescript className={`${className} text-[#36c]`} size={size} />
     )
 }
 export function IconZod({ className, size = 30 }: Props) {
     return (
-        <SiZod className={`${className}`} size={size} />
+        <SiZod className={`${className} text-[#3399ff]`} size={size} />
     )
 }
 export function IconJavaScript({ className, size = 30 }: Props) {
     return (
-        <IoLogoJavascript className={`${className}`} size={size} />
+        <IoLogoJavascript className={`${className} text-[#f7df1e]`} size={size} />
     )
 }
 export function IconNode({ className, size = 30 }: Props) {
     return (
-        <FaNodeJs className={`${className}`} size={size} />
+        <FaNodeJs className={`${className} text-[#339933]`} size={size} />
     )
 }
 export function IconGlobe({ className, size = 30 }: Props) {

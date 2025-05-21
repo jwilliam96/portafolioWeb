@@ -13,3 +13,6 @@ export { listProject } from "./projects/utils/helps"
 export { Projects } from "./projects/projects"
 
 export { Responsive } from "./responsive/responsive"
+
+export { habilidades } from "./skills/utils/habilidades"
+export { Skills } from "./skills/skills"

@@ -1,4 +1,4 @@
-import { Projects, Responsive } from "@/ui";
+import { Projects, Responsive, Skills } from "@/ui";
 
 export default function Home() {
   return (
@@ -6,6 +6,8 @@ export default function Home() {
       <Projects />
 
       <Responsive />
+
+      <Skills />
 
     </main>
   );
