@@ -1,14 +1,15 @@
-import { Projects, Responsive, Skills } from "@/ui";
+import { Contact, Projects, Skills, Studies } from "@/components";
 
 export default function Home() {
   return (
     <main>
       <Projects />
 
-      <Responsive />
-
       <Skills />
 
+      <Studies />
+
+      <Contact />
     </main>
   );
 }

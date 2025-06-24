@@ -1,7 +1,7 @@
 
 
-import { ButtonGitDemo } from "./button-gitDemo";
 import Image from "next/image";
+import { ButtonGitDemo } from "./button-gitDemo";
 
 interface Props {
     className?: string

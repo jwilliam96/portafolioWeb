@@ -1,4 +1,4 @@
-import { IconGitHub, IconGlobe } from "@/components";
+import { IconGitHub, IconGlobe } from "@/ui";
 
 interface Props {
     className?: string

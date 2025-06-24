@@ -1,8 +1,8 @@
-import { IconJavaScript, IconNext, IconNode, IconReact, IconTailwind, IconTypeScript, IconZod, Title } from "@/components";
-import { CardProject } from "./card-project";
-import { listProject } from "./utils/helps";
 import { SvgOlaMoradaProject, SvgOlaMoradaTwoProject, SvgOlaRojaProject } from "./svg/ilustraciones-olas";
-import Image from "next/image";
+import { IconJavaScript, IconNext, IconNode, IconReact, IconTailwind, IconTypeScript, IconZod, } from "@/ui";
+import { CardProject } from "./ui/card-project";
+import { listProject } from "./utils/helps";
+import { Title } from "@/components"
 
 export function Projects() {
     return (
@@ -22,9 +22,6 @@ export function Projects() {
                 </div>
             </div>
 
-            <Image className="absolute top-[380px] bg-size-[1440px] h-[600px] w-full -z-10" src={"/img/project/lineas.svg"} alt="lineas" width={1440} height={431} />
-            <Image className="absolute top-[1280px] bg-size-[1440px] h-[600px] w-full -z-10" src={"/img/project/lineas.svg"} alt="lineas" width={1440} height={431} />
-
             <div className="max-w-[1225px] mx-auto px-4 relative mt-64 lg:mt-96">
                 <Title title="proyecto" />
                 <p className="text-center text-white max-w-[500px] mx-auto md:text-xl">Estos proyectos son 100% responsive, y se ha manejado tanto el lado del Front como el del Back-end</p>
@@ -39,6 +36,7 @@ export function Projects() {
                     <IconNode />
                 </div>
 
+                {/* PROYECTOS  */}
                 <div className="grid gap-20 justify-center mt-16 md:justify-normal md:gap-20 md:mt-24">
                     {
                         listProject.map((item, index) => (

@@ -1,5 +1,5 @@
 import { HeaderIllustration } from "./header-illustration";
-import { IconDownload, SvgOlaMorada } from "@/components";
+import { IconDownload, SvgOlaMorada } from "@/ui";
 
 export function Header() {
     return (

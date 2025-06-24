@@ -1,4 +1,5 @@
-import { geistMono, geistSans, Header, TopMenu } from "@/ui";
+import { Footer, Header, TopMenu } from "@/components";
+import { geistMono, geistSans } from "@/ui"
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -21,7 +22,7 @@ export default function RootLayout({
         <Header />
 
         {children}
-
+        <Footer />
       </body>
     </html>
   );
