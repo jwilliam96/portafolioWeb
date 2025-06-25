@@ -15,6 +15,12 @@
   .clip-project-ola-moradaTwo {
     clip-path: url(#wave3);
   }
+  .clip-footer-ola-azul {
+    clip-path: url(#footer1);
+  }
+  .clip-footer-ola-azul-oscuro {
+    clip-path: url(#footer2);
+  }
 }
 
 @theme {

@@ -2,11 +2,21 @@
 import Link from "next/link";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
+import { SvgOlaAzul } from "./svg/svg-ola-azul";
+import SvgOlaAzulOscuro from "./svg/svg-ola-azul-oscuro";
 
 export function Footer() {
     return (
-        <footer className="text-white" id="footer">
-            <article className="md:flex place-content-evenly ">
+        <footer className="text-white relative" id="footer">
+
+            <div className="absolute w-full overflow-hidden clip-footer-ola-azul z-[-1] top-0 h-[250px] block bg-linear-[#176ab1_11.94%,#cbd8f1_80.98%] lg:scale-150 lg:-left-1">
+                <SvgOlaAzul />
+            </div>
+            <div className="absolute w-full -z-1 overflow-hidden clip-footer-ola-azul-oscuro top-[30px] h-[350px] bg-linear-[#130c3ecc_0%,#1e1357_28%] lg:scale-150 lg:-left-1 lg:top-34">
+                <SvgOlaAzulOscuro />
+            </div>
+
+            <article className="md:flex place-content-evenly pt-52">
                 <section className="py-4 ">
                     <h3 className="text-center text-2xl font-bold pb-3">
                         CONTACTO

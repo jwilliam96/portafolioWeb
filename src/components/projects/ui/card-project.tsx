@@ -41,17 +41,17 @@ export function CardProject({ className, title, url, reverse, urlDesktop, urlMob
             {/* DESKTOP CARD  */}
             <div className={`gap-4 ${reverse && "order-1"} hidden md:flex`}>
                 <figure className="flex items-center">
-                    <Image priority className="w-[360px] h-auto fill-white drop-shadow-2xl drop-shadow-white/50" src={urlDesktop ?? ""} alt="img" width={1280} height={719} />
+                    <Image priority className="w-[460px] h-auto fill-white drop-shadow-2xl drop-shadow-white/20" src={urlDesktop ?? ""} alt="img" width={1280} height={719} />
                 </figure>
                 <figure className="flex items-center">
-                    <Image className="w-[160px] h-auto fill-white drop-shadow-2xl drop-shadow-white/40" src={urlMobile ?? ""} alt="img}" width={504} height={917} />
+                    <Image className="w-[130px] h-auto fill-white drop-shadow-2xl drop-shadow-white/20" src={urlMobile ?? ""} alt="img}" width={504} height={917} />
                 </figure>
 
             </div>
 
 
             {/* DESCRIPTION  */}
-            <div className="hidden md:block max-w-[470px] mx-auto px-10 py-6 rounded-3xl border border-gray-600 bg-[#19184d]">
+            <div className="hidden md:block max-w-[490px] mx-auto px-10 py-6 rounded-3xl border border-gray-600 bg-[#18173e]">
                 <p className="text-[#ffffffb3] mb-4">{rol}</p>
                 <h3 className=" text-3xl mb-4 font-bold text-white lg:text-4xl">{title}</h3>
                 <p className="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo impedit quod excepturi itaque enim non adipisci unde natus molestias sapiente, consequuntur pariatur, quia, praesentium voluptas veniam reiciendis fugiat dolore necessitatibus.</p>
